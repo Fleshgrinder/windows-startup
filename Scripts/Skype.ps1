@@ -3,6 +3,6 @@
 #
 # AUTHOR: Richard Fussenegger <richard@fussenegger.info>
 ##
-& '%ProgramFiles(x86)%\Skype\Phone\Skype.exe' /username:'' /password:'' /nosplash /minimized
-sleep 1
-& '%ProgramFiles(x86)%\Skype\Phone\Skype.exe' /username:'' /password:'' /nosplash /minimized /secondary
+& "${env:ProgramFiles(x86)}\Skype\Phone\Skype.exe" /username:'' /password:'' /nosplash /minimized
+Start-Sleep -Seconds 1
+& "${env:ProgramFiles(x86)}\Skype\Phone\Skype.exe" /username:'' /password:'' /nosplash /minimized /secondary

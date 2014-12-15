@@ -3,11 +3,7 @@
 #
 # AUTHOR: Richard Fussenegger <richard@fussenegger.info>
 ##
-Import-Module WASP
-& '%ProgramFiles(x86)%\Mozilla Thunderbird\thunderbird.exe'
-sleep 1
-# Download new messages for all accounts.
-#Select-Window thunderbird* | Set-WindowActive | Send-Keys '%{F5}'
-# Discard certificate question.
-#Select-Window thunderbird* | Set-WindowActive | Remove-Window -Passthru | Select-ChildWindow | Send-Keys '{ESC}'
+import-module "${PSScriptRoot}\WASP.dll"
+& "${env:ProgramFiles(x86)}\Mozilla Thunderbird\thunderbird.exe"
+Start-Sleep -Seconds 1
 Select-Window thunderbird* | Set-WindowActive | Set-WindowPosition -Minimize
