@@ -1,4 +1,4 @@
-# Windows Skype Startup
+# Windows Startup
 Simple script to start two [Skype](https://www.skype.com/) instances and a minimized
 [Mozilla Thunderbird](https://www.mozilla.org/thunderbird/) instance on Windows startup. You must edit the
 `Scripts\Skype.ps1` file and add your usernames and passwords for both Skype instances that should be started.
